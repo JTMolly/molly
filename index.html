@@ -839,7 +839,7 @@ footer {
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
-  .hero-text { padding: 110px 32px 60px; }
+  .hero-text { padding: 110px 24px 60px; }
   .hero-visual { display: none; }
   .intro-grid, .decoy-manifesto, .freq-comparison { grid-template-columns: 1fr; gap: 32px; }
   .freq-connector { display: none; }
@@ -847,21 +847,32 @@ footer {
   .ip-grid { grid-template-columns: 1fr 1fr !important; }
   .freq-stats { grid-template-columns: 1fr 1fr; }
   .timeline-grid { grid-template-columns: 1fr; gap: 0; }
-  .container { padding: 0 24px; }
-  nav { padding: 16px 24px; }
+  .container { padding: 0 20px; }
+  nav { padding: 16px 20px; }
   .nav-links { display: none; }
-  section { padding: 64px 0; }
-  .decoy-science { padding: 32px 24px; }
+  section { padding: 56px 0; }
+  .decoy-science { padding: 28px 20px; }
   .pub-item { grid-template-columns: 48px 1fr; gap: 16px; }
   .pub-num { font-size: 32px; }
   .hero-stats { grid-template-columns: 1fr 1fr; gap: 12px; }
-  .contact-section { padding: 64px 24px; }
-  footer { padding: 24px; flex-direction: column; gap: 12px; text-align: center; }
-}
+  .contact-section { padding: 56px 20px; }
+  footer { padding: 20px; flex-direction: column; gap: 12px; text-align: center; }
 
-@media (max-width: 900px) {
-  /* Partnership section inline grid */
+  /* Partnership section */
   .partner-grid { grid-template-columns: 1fr !important; }
+
+  /* Science credibility inline grids */
+  .science-data-grid { grid-template-columns: 1fr 1fr !important; }
+  .science-ingredient-grid { grid-template-columns: 1fr !important; }
+  .partner-stat-grid { grid-template-columns: 1fr 1fr !important; }
+
+  /* Hero title sizes */
+  .hero-name-zh { font-size: 52px !important; }
+  .section-title { font-size: 32px !important; }
+
+  /* Table overflow */
+  table { font-size: 11px !important; }
+  table td, table th { padding: 10px 8px !important; }
 }
 </style>
 </head>
@@ -1024,7 +1035,7 @@ footer {
     <!-- 1. 數據佐證 -->
     <div class="reveal" style="margin:64px 0 48px;">
       <div class="section-label">Clinical Data · 實證數據</div>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:32px;">
+      <div class="science-data-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:32px;">
         <div style="padding:40px 24px;background:white;text-align:center;">
           <span style="font-family:'Cormorant Garamond',serif;font-size:52px;color:var(--rose);display:block;line-height:1">萬+</span>
           <span style="font-size:11px;color:var(--muted);margin-top:10px;display:block;line-height:1.8;letter-spacing:1px">累積客流次<br>Client Sessions</span>
@@ -1048,7 +1059,7 @@ footer {
     <!-- 2. 核心成分 -->
     <div class="reveal" style="margin:48px 0;">
       <div class="section-label">Key Ingredients · 核心成分</div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:32px;">
+      <div class="science-ingredient-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:32px;">
         <div style="padding:32px 28px;background:white;border-top:2px solid var(--rose);">
           <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--rose);margin-bottom:12px">Layer 02 · 遞送載體</div>
           <div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--dark);margin-bottom:10px">sh-Decapeptide-5 SP</div>
@@ -1393,7 +1404,7 @@ footer {
            onmouseout="this.style.background='var(--rose)'">與我們洽談合作</a>
       </div>
       <div class="reveal" style="transition-delay:0.3s">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div class="partner-stat-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
           <div style="padding:32px 24px;background:white;border-radius:4px;text-align:center;box-shadow:0 4px 20px rgba(196,136,142,0.08)">
             <span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--rose);display:block;line-height:1">8+</span>
             <span style="font-size:11px;color:var(--muted);margin-top:8px;display:block;line-height:1.6">年品牌深耕<br>Years of Brand</span>
